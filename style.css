@@ -1,3 +1,60 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+ height: 5%;
+}
+
+img{
+  height:20px;
+}
+
 body {
-    background: #3F3939;
+  background: #fff;
+  height:100vh;
+}
+
+main {
+  display: flex;
+  height: 90%;
+}
+
+nav {
+  width: 20%;
+  height: 100%;
+  background: #9bcfed;
+  display: grid;
+  align-items: center;
+}
+
+.menu div {
+  border: 1px red solid;
+  text-align: center;
+}
+
+section {
+  width: 100%;
+  background: #01529e;
+}
+
+footer {
+  height: 5%;
+}
+
+@media only screen and (max-width: 600px) {
+  main {
+    flex-direction: column-reverse;
+  }
+  nav {
+    height: 30%;
+    width: 100%;
+    overflow: scroll;
+  }
+  section {
+    height: 70%;
+    width: 100%;
+  }
 }
